@@ -8,6 +8,7 @@ public class LogParserApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(LogParserApplication.class, args);
+
 	}
 
 }
