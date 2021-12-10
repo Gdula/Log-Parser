@@ -4,13 +4,20 @@ package com.gdula.logParser.Service;
 import com.gdula.logParser.jsonParser.JsonParser;
 import com.gdula.logParser.model.Event;
 import com.gdula.logParser.model.Log;
+import com.gdula.logParser.repository.EventRepository;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.List;
 
+@Service
 public class EventService {
+    @Autowired
+    private EventRepository eventRepository;
+
 
     public boolean isEventWithId(String id, List<Event> events) {
         return events.stream().anyMatch(x -> x.getId().equals(id));
@@ -50,6 +57,11 @@ public class EventService {
         }
 
         return events;
+    }
+
+    public void saveEvents() {
+        List<Event> events = getEvents();
+        eventRepository.saveAll(events);
     }
 
 

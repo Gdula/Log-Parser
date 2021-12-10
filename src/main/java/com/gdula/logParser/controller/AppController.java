@@ -7,6 +7,7 @@ public class AppController {
     EventService service = new EventService();
 
     public void run() {
-        System.out.println(service.getEvents().toString());
+        service.saveEvents();
+
     }
 }
