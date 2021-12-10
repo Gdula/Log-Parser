@@ -1,3 +1,4 @@
 {"id":"a", "state":"STARTED", "type":"APPLICATION_LOG", "host":"12345", "timestamp":1491377495212}
-{"id":"a", "state":"STARTED", "type":"APPLICATION_LOG", "host":"12345", "timestamp":1491377495212}
-{"id":"a", "state":"STARTED", "type":"APPLICATION_LOG", "host":"12345", "timestamp":1491377495212}
+{"id":"b", "state":"STARTED", "timestamp":1491377495213}
+{"id":"a", "state":"FINISHED", "type":"APPLICATION_LOG", "host":"12345", "timestamp":1491377495217}
+{"id":"b", "state":"STARTED", "timestamp":1491377495216}

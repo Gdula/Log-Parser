@@ -4,7 +4,6 @@ import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.gdula.logParser.model.Log;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 
@@ -15,7 +14,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-@Service
 public class JsonParser {
     private static ObjectMapper objectMapper = getDefaultObjectMapper();
 
@@ -50,6 +48,5 @@ public class JsonParser {
         return logsList;
     }
 
-    public JsonParser() {
-    }
+
 }
